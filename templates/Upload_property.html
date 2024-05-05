@@ -1,0 +1,441 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>EstateAgency Bootstrap Template - Upload Property</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EstateAgency - v4.10.0
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    /* Style the welcome message */
+    .abc{
+     border-radius: 8px;
+        border: 2px solid #ccc;
+       height: 40px;
+        width:40px;
+        }
+    .xyz {
+
+      background-color: ;
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px 20px;
+      color: orange ;
+
+    }
+
+    .xyz marquee {
+      font-weight: bold;
+    }
+    <style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: #b3c9c5;
+		}
+ 		form {
+			background-color: #e1faf5;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			display: flex;
+			flex-direction: column;
+			margin: 50px auto;
+			max-width: 800px;
+			overflow: hidden;
+			padding: 40px;
+			position: relative;
+		}
+			h1 {
+			color: #333;
+			font-size: 36px;
+			font-weight: 700;
+			margin-bottom: 40px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+
+		.navbar {
+			background-color: #343a40;
+			border-bottom: 3px solid #ff9900;
+			font-size: 18px;
+		}
+
+		.navbar-brand {
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.nav-link {
+			color: #fff !important;
+			font-weight: bold;
+		}
+
+		.form-control:focus {
+			border-color: #ff9900;
+			box-shadow: none;
+		}
+
+		.btn-primary {
+			background-color: #ff9900;
+			border-color: #ff9900;
+		}
+
+		.btn-primary:hover {
+			background-color: #ff6600;
+			border-color: #ff6600;
+		}
+
+		.btn-danger {
+			background-color: #dc3545;
+			border-color: #dc3545;
+		}
+
+		.btn-danger:hover {
+			background-color: #c82333;
+			border-color: #c82333;
+		}
+
+		.card {
+			margin-top: 30px;
+			border: none;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+		}
+
+		.card-header {
+			background-color: #343a40;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		.card-title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.card-text {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		label {
+			color: #666;
+			display: block;
+			font-size: bold;
+			font-weight: 500;
+			margin-bottom: 10px;
+			text-align: left;
+			text-transform: uppercase;
+				}
+		input, textarea, select {
+			background-color: #fff;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			color: #333;
+			font-size: 18px;
+			margin-bottom: 20px;
+			padding: 15px;
+			width: 100%;
+			max-width: 400px;
+			resize: none;
+		}
+		input[type="file"] {
+			padding: 10px 0;
+			}
+		select {
+			appearance: none;
+			background-color: #fff;
+			background-image: url('https://cdn.iconscout.com/icon/free/png-256/dropdown-arrow-1767583-1502435.png');
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+			background-size: 15px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			color: #333;
+			font-size: 18px;
+			margin-bottom: 20px;
+			padding: 15px 45px 15px 15px;
+			position: relative;
+		}
+		select:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			width: 10px;
+			height: 10px;
+			border-top: 2px solid #333;
+			border-right: 2px solid #333;
+			transform: rotate(45deg);
+		}
+		button {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 18px;
+			margin-top: 20px;
+			padding: 15px;
+			transition: background-color 0.3s ease;
+			width: 200px;
+			position: relative;
+			z-index: 1
+			}
+		input[type=text], input[type=email], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        box-sizing: border-box;
+      }
+
+<!--			choose button-->
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Property Search Section ======= -->
+  <div class="click-closed"></div>
+  <!--/ Form Search Star /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">Search Property</h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+      <form action="search" class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+
+          </div>
+
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="citys">City</label>
+             <input   class="form-control form-control-a" type="text" id="citys" required name="city" placeholder="Enter City"><br>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bedrooms">Bedrooms</label>
+              <select class="form-control form-select form-control-a" id="bedrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="garages">Garages</label>
+              <select class="form-control form-select form-control-a" id="garages">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bathrooms">Bathrooms</label>
+              <select class="form-control form-select form-control-a" id="bathrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="price">Min Price</label>
+              <select class="form-control form-select form-control-a" id="price">
+                <option>Unlimite</option>
+                <option>$50,000</option>
+                <option>$100,000</option>
+                <option>$150,000</option>
+                <option>$200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button  type="submit" class="btn btn-b">Search Property</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><!-- End Property Search Section -->>
+
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="navbar-brand text-brand" href="/">Estate<span class="color-b">Agency</span></a>
+
+
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+         <li class="nav-item">
+            <a class="nav-link " href="/">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="propertys">Property</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Upload_property">Upload_Property</a>
+          </li>
+
+          {% if request.session.username %}
+          <li class="nav-item">
+            <a class="nav-link " href="dashboard">Dashboard</a>
+          </li>
+
+            <a class="nav-link" href="logout"> <span class="color-b">Logout</span></a>
+          <div class="xyz">
+        <img class="abc" src="{% static 'assets/img/avtar1.png' %}"alt="">
+
+      <marquee width="40%" direction="15px" scrollamount="3" height="20px">
+        Welcome! {{ request.session.name }}
+      </marquee>
+    </div>
+          {% else %}
+            <a class="nav-link" href="login"> <span class="color-b">Login Here</span> </a>
+          {% endif %}
+
+
+        </ul>
+      </div>
+
+<!--      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">-->
+<!--        <i class="bi bi-search"></i>-->
+<!--      </button>-->
+
+
+
+
+    </div>
+
+  </nav><!-- End Header/Navbar --><br>
+
+
+
+	<br><br><form action="property_upload" method="post" enctype="multipart/form-data">
+
+		  				 {% csrf_token %}
+
+		<label for="propertyImages">Property Images:</label>
+		<input type="file" id="propertyImages1" required name="propertyImages1"  multiple>
+
+		<label for="propertyImages">Property Images:</label>
+		<input type="file" id="propertyImages2" required name="propertyImages2"  multiple>
+
+		<label for="propertyImages">Property Images:</label>
+		<input type="file" id="propertyImages3" required name="propertyImages3"  multiple>
+
+		<label for="propertyDescription">Description:</label>
+		<textarea id="propertyDescription" name="propertyDescription" rows="4"></textarea>
+
+		<label for="propertyArea">Area:</label>
+		<textarea id="propertyArea" name="propertyArea" placeholder="Area"></textarea>
+
+		<label for="propertyBeds">Beds:</label>
+		<input type="number" id="propertyBeds" name="propertyBeds" placeholder="How many Beds">
+
+		<label for="propertyBaths">Baths:</label>
+		<input type="number" id="propertyBaths" name="propertyBaths" placeholder="How many baths">
+
+		<label for="propertyGarages">Garages:</label>
+		<input type="number" id="propertyGarages" name="propertyGarages" placeholder="Garages">
+
+		<label for="propertyPrice">Price:</label>
+		<input type="number" id="propertyPrice" name="propertyPrice" placeholder="Enter price in INR">
+
+		<label for="propertyLocation">Location:</label>
+		<input type="text" id="propertyLocation" required name="propertyLocation" placeholder="Enter location">
+
+		<label for="city">City:</label><br>
+      <input type="text" id="city" required name="city" placeholder="Enter City"><br>
+
+      <label for="state">State:</label><br>
+      <input type="text" id="state" name="state" placeholder="Enter State"><br>
+
+      <label for="pin">pin Code:</label><br>
+      <input type="text" id="pin" name="pin" placeholder="Enter Pin"><br>
+
+		<label for="contactDetails">Contact Details:</label>
+		<input type="text" id="contactDetails" required name="contactDetails" placeholder="Enter contact details">
+
+		{% comment %} <label for="bhkType">BHK Type:</label>
+		<select id="bhkType" name="bhkType">
+			<option value="1BHK">1 BHK</option>
+			<option value="2BHK">2 BHK</option>
+			<option value="3BHK">3 BHK</option>
+		</select> {% endcomment %}
+		<br>
+		<label for="city">Email:</label>
+		<input type="email" id="email" value= {{ request.session.username }} name="email" placeholder="Enter email">
+
+
+		<button class="color-b" type="submit">Upload Property</button>
+	</form>
+</body>
+</html>

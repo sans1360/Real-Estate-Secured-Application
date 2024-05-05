@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Property Upload</title>
+  <style>
+    /* Reset default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set default font family and font size */
+    body {
+     background-color: #3d8594;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    /* Style the navigation bar */
+    nav {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #ccc;
+    }
+
+    /* Style the main content */
+    main {
+      margin: 20px;
+    }
+
+    /* Style the form */
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 10px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ccc;
+      color: #333;
+    }
+
+    /* Style the welcome message */
+    .abc{
+     border-radius: 8px;
+        border: 2px solid #ccc;
+       height: 40px;
+        width:40px;
+        }
+    .xyz {
+
+      background-color: ;
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px 20px;
+
+    }
+
+    .xyz marquee {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {% if user.is_authenticated %}
+        <li><a href="Your_property">Your Property</a></li>
+        <li><a href="/logout">Logout</a></li>
+
+      {% else %}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {% endif %}
+    </ul>
+
+    <div class="xyz">
+        <img class="abc" src="https://img.freepik.com/premium-vector/man-avatar-profile-round-icon_24640-14044.jpg?w=740" alt="">
+
+      <marquee width="30%" direction="10px" scrollamount="3" height="20px">
+        Welcome! {{ user.email }}
+      </marquee>
+    </div>
+  </nav>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+</body>
+</html>
